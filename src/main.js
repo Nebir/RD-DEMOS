@@ -2,13 +2,20 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import BootstrapVue from "bootstrap-vue"
+import Router from 'vue-router'
+import {routes} from './router'
 import App from './App'
-import router from './router'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
+
+Vue.use(Router);
+const router = new Router({
+    routes,
+    mode: 'history'
+});
 
 /* eslint-disable no-new */
 new Vue({

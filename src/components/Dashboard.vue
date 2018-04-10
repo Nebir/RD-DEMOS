@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="dashbaord-page">
     <nav class="navbar navbar-expand-lg justify-content-between navbar-fixed-top">
       <div class="container">
         <a class="navbar-brand">
@@ -18,25 +18,16 @@
         </div>
       </div>
     </nav>
-    <h1>{{ msg }}</h1>
-    <h2>This is the home page</h2>
+    This is Dashboard page
   </div>
 </template>
 
 <script>
     export default {
-        name: 'hello',
-        data () {
-            return {
-                msg: 'Welcome to Your Vue.js App'
-            }
-        }
+        name: "dashboard"
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  h1, h2 {
-    font-weight: normal;
-  }
+
 </style>
