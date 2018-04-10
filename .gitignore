@@ -14,3 +14,18 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+
+## Directory-based project format:
+.idea/
+.idea/vcs.xml
+
+# if you remove the above rule, at least ignore the following:
+
+# User-specific stuff:
+# .idea/workspace.xml
+# .idea/tasks.xml
+# .idea/dictionaries
+# .idea/shelf
+
+# Packages
+_ide_helper.php
