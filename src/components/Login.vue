@@ -43,11 +43,11 @@
 								</b-col>
 
 								<b-col class="col-auto">
-									<a to="/passwordReset"
+									<b-link to="/passwordReset"
 										 class="self-align-end"
 										 style="font-size: 12px;">
 										<span class="fa fa-lock"></span> Forgot Password?
-									</a>
+									</b-link>
 								</b-col>
 							</b-row>
 
@@ -57,24 +57,23 @@
 								Log In
 							</b-button>
 
-							<a to="/">
+							<b-link to="/">
 								<b-button size="lg"
-													type="submit"
 													class="btn-block btn-rd btn-skyblue">
 									Back to Main Menu
 								</b-button>
-							</a>
+							</b-link>
 						</b-form>
 
 						<b-form-text>
 							Didn't get the Verification Email?
 						</b-form-text>
 						<b-form-text>
-							<a to="/passwordReset"
+							<b-link to="/passwordReset"
 								 class="self-align-end"
 								 style="font-weight: 300;">
 								<span class="fa fa-envelope-o"></span> Resend verification Email
-							</a>
+							</b-link>
 						</b-form-text>
 					</b-card>
 				</div>
