@@ -72,7 +72,7 @@
 						<b-form-text>
 							<a to="/passwordReset"
 								 class="self-align-end"
-								 style="font-size: 12px;">
+								 style="font-weight: 300;">
 								<span class="fa fa-envelope-o"></span> Resend verification Email
 							</a>
 						</b-form-text>
@@ -119,6 +119,8 @@
 <style scoped>
 	.login-page .login-wrapper {
 		height: 100vh;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
 	}
 	.form-group {
 		margin-bottom: 2rem;
