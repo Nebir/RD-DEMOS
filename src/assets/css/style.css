@@ -1,7 +1,6 @@
 body {
     background-color: #f3f3f3;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-size: 15px;
 }
 
 a{
@@ -22,11 +21,16 @@ a:hover {
     margin-bottom: 60px;
 }
 
+.navbar-brand img {
+    width: 120px;
+}
+
 .btn-rd {
     border: 1px solid transparent;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
+    font-size: 15px;
     margin-bottom: 20px;
 }
 .btn-rd:focus,
@@ -41,20 +45,25 @@ a:hover {
     background-color: transparent;
     color: inherit;
 }
-.btn-teal {
+.btn-teal,
+.btn-teal-light:hover{
     background-color: #009688;
     border-color: #009688;
 }
+.btn-teal-light,
 .btn-teal:hover {
-    background-color: #008080;
-    border-color: #008080;
+    background-color: #1fddb3;
+    border-color: #1fddb3;
 }
 
-.btn-skyblue {
-    background-color: #03a9f4;
-    border-color: #03a9f4;
-}
-.btn-skyblue:hover {
+.btn-skyblue,
+.btn-skyblue-light:hover{
     background-color: #00bfff;
     border-color: #00bfff;
+}
+
+.btn-skyblue-light,
+.btn-skyblue:hover {
+    background-color: #1faadd;
+    border-color: #1faadd;
 }
