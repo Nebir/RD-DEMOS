@@ -23,7 +23,94 @@
       <b-row>
         <b-col md="3">
           <!-- side-navigations -->
+          <!--<b-nav vertical>
+            <b-nav-item>Dashboard</b-nav-item>
+            <b-nav-item-dropdown text="Admin" extra-toggle-classes="nav-link-custom" right>
+              <b-dropdown-item>Pending Schedules</b-dropdown-item>
+              <b-dropdown-item>Submitted Demos</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item-dropdown text="Users" extra-toggle-classes="nav-link-custom" right>
+              <b-dropdown-item>Active</b-dropdown-item>
+              <b-dropdown-item>Archived</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item>Store</b-nav-item>
+            <b-nav-item>Clients</b-nav-item>
+            <b-nav-item-dropdown text="Product" extra-toggle-classes="nav-link-custom" right>
+              <b-dropdown-item>Products</b-dropdown-item>
+              <b-dropdown-item>Product Sales</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item-dropdown text="Demo Reports" extra-toggle-classes="nav-link-custom" right>
+              <b-dropdown-item>Approved Demos</b-dropdown-item>
+              <b-dropdown-item>Submitted Demos</b-dropdown-item>
+              <b-dropdown-item>Incomplete Demos</b-dropdown-item>
+              <b-dropdown-item>Demos Conflicts</b-dropdown-item>
+            </b-nav-item-dropdown>
+          </b-nav>-->
 
+          <b-list-group class="side-navigation">
+            <b-list-group-item href="#" active>
+              <span><i class="fa fa-th-large"></i>Dashboard</span>
+            </b-list-group-item>
+
+            <b-list-group-item v-b-toggle.collapseAdmin
+                               class="d-flex justify-content-between align-items-center">
+              <span><i class="fa fa-shirtsinbulk"></i>Admin</span>
+              <span class="dropdown-icon fa fa-angle-down"></span>
+            </b-list-group-item>
+            <b-collapse id="collapseAdmin">
+              <b-list-group>
+                <b-list-group-item href="#"><span><i class="fa fa-clock-o"></i>Pending Schedules</span></b-list-group-item>
+                <b-list-group-item href="#"><span><i class="fa fa-clock-o"></i>Submitted Demos</span></b-list-group-item>
+              </b-list-group>
+            </b-collapse>
+
+            <b-list-group-item v-b-toggle.collapseUsers
+                               class="d-flex justify-content-between align-items-center">
+              <span><i class="fa fa-user"></i>Users</span>
+              <span class="dropdown-icon fa fa-angle-down"></span>
+            </b-list-group-item>
+            <b-collapse id="collapseUsers">
+              <b-list-group>
+                <b-list-group-item href="#"><span><i class="fa fa-plane"></i>Active</span></b-list-group-item>
+                <b-list-group-item href="#"><span><i class="fa fa-archive"></i>Archived</span></b-list-group-item>
+              </b-list-group>
+            </b-collapse>
+
+            <b-list-group-item href="#">
+              <span><i class="fa fa-cloud"></i>Store</span>
+            </b-list-group-item>
+
+            <b-list-group-item href="#">
+              <span><i class="fa fa-handshake-o"></i>Clients</span>
+            </b-list-group-item>
+
+            <b-list-group-item v-b-toggle.collapseProduct
+                               class="d-flex justify-content-between align-items-center">
+              <span><i class="fa fa-cube"></i>Product</span>
+              <span class="dropdown-icon fa fa-angle-down"></span>
+            </b-list-group-item>
+            <b-collapse id="collapseProduct">
+              <b-list-group>
+                <b-list-group-item href="#"><span><i class="fa fa-database"></i>Products</span></b-list-group-item>
+                <b-list-group-item href="#"><span><i class="fa fa-shopping-basket"></i>Product Sales</span></b-list-group-item>
+              </b-list-group>
+            </b-collapse>
+
+            <b-list-group-item v-b-toggle.collapseReports
+                               class="d-flex justify-content-between align-items-center">
+              <span><i class="fa fa-desktop"></i>Demo Reports</span>
+              <span class="dropdown-icon fa fa-angle-down"></span>
+            </b-list-group-item>
+            <b-collapse id="collapseReports">
+              <b-list-group>
+                <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Approved Demos</span></b-list-group-item>
+                <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Submitted Demos</span></b-list-group-item>
+                <b-list-group-item href="#"><span><i class="fa fa-minus-circle"></i>Incomplete Demos</span></b-list-group-item>
+                <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Demos Conflicts</span></b-list-group-item>
+              </b-list-group>
+            </b-collapse>
+
+          </b-list-group>
         </b-col>
 
         <b-col md="9">
@@ -655,6 +742,7 @@
 </template>
 
 <script>
+
     export default {
         name: "dashboard",
         data () {
@@ -695,6 +783,49 @@
 </script>
 
 <style scoped>
+  .dashbaord-page {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .side-navigation {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .side-navigation .list-group {
+    -webkit-box-shadow: 0px 1px 2px 0px #ccc;
+    -moz-box-shadow: 0px 1px 2px 0px #ccc;
+    box-shadow: 0px 1px 2px 0px #ccc;
+    margin-top: 2px;
+  }
+
+  .side-navigation.list-group .list-group-item {
+    margin-bottom: 0px;
+    border: none;
+    /*border-top: 1px solid #f5f5f5;*/
+    -webkit-box-shadow: 0px 1px 2px 0px #ccc;
+    -moz-box-shadow: 0px 1px 2px 0px #ccc;
+    box-shadow: 0px 1px 2px 0px #ccc;
+  }
+  .side-navigation .list-group-item span.dropdown-icon{
+    font-size: 18px;
+  }
+  .side-navigation .list-group-item span i {
+    margin-right: 15px;
+  }
+  .side-navigation .collapse .list-group .list-group-item {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding-left: 45px;
+  }
+  .side-navigation .list-group-item:first-child, .list-group-item:last-child {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
+
   .info-card {
     -webkit-box-shadow: 0px 3px 3px 0px #ded8d8;
     -moz-box-shadow: 0px 3px 3px 0px #ded8d8;
@@ -704,7 +835,6 @@
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-bottom: 5px;
   }
