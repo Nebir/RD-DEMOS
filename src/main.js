@@ -9,6 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'font-awesome/css/font-awesome.min.css'
 
+import sideNav from '@/components/SideNav'
+
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
