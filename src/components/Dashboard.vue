@@ -64,7 +64,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -126,7 +126,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -188,7 +188,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -250,7 +250,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -312,7 +312,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -374,7 +374,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -436,7 +436,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -498,7 +498,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -560,7 +560,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>
@@ -622,7 +622,7 @@
 
               <b-col class="col-auto align-self-end">
                 <b-button-group>
-                  <b-button class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
                   <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
                 </b-button-group>
               </b-col>

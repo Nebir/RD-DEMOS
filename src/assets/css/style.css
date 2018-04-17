@@ -72,22 +72,74 @@ a:hover {
     border-color: #1faadd;
 }
 
+.btn-violet {
+    background-color: #744be9;
+}
+
+.btn-radius {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label.col-form-label {
+    color: #213e7a;
+    font-size: 80%;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #213e7a;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+}
+
+.content-wrapper {
+    background-color:  #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px #dadada;
+    -moz-box-shadow: 0px 0px 10px 0px #dadada;
+    box-shadow: 0px 0px 10px 0px #dadada;
+    margin-bottom:  75px;
+    padding: 25px 50px 60px 30px;
+}
+
 .dashboard-card {
     -webkit-box-shadow: 0px 3px 3px 0px #ded8d8;
     -moz-box-shadow: 0px 3px 3px 0px #ded8d8;
     -ms-box-shadow: 0px 3px 3px 0px #ded8d8;
     -o-box-shadow: 0px 3px 3px 0px #ded8d8;
-    box-shadow: 0px 3px 3px 0px #ded8d8;
+    box-shadow: 0px 3px 3px 0px #ded8d8;/*0px 3px 2px 0px rgba(155, 155, 155, 0.7)*/
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
     font-weight: 400;
     margin-bottom: 5px;
 }
-.info-card .card-body,
+
+/*.info-card .card-body,
 .table-card .card-body {
     text-align: left;
-}
+}*/
 
 info-card .information-unit {
     margin: 20px 0px;

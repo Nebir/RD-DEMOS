@@ -2,6 +2,7 @@ import Hello from '@/components/Hello'
 import Login from '@/components/Login'
 import Dashboard from '@/components/Dashboard'
 import Store from '@/components/Store'
+import Form from '@/components/Form'
 
 export const routes = [
     {
@@ -23,5 +24,10 @@ export const routes = [
         path: '/store',
         name: 'store',
         component: Store
+    },
+    {
+        path: '/form',
+        name: 'form',
+        component: Form
     }
 ];
