@@ -48,12 +48,88 @@
       </b-list-group>
     </b-collapse>
 
-    <b-list-group-item v-b-toggle.collapseReports
+    <b-list-group-item v-b-toggle.collapseDemoReports
                        class="d-flex justify-content-between align-items-center">
       <span><i class="fa fa-desktop"></i>Demo Reports</span>
       <span class="dropdown-icon fa fa-angle-down"></span>
     </b-list-group-item>
+    <b-collapse id="collapseDemoReports">
+      <b-list-group>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Approved Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Submitted Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-minus-circle"></i>Incomplete Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Demos Conflicts</span></b-list-group-item>
+      </b-list-group>
+    </b-collapse>
+
+    <b-list-group-item v-b-toggle.collapseScheduling
+                       class="d-flex justify-content-between align-items-center">
+      <span><i class="fa fa-desktop"></i>Demo Scheduling</span>
+      <span class="dropdown-icon fa fa-angle-down"></span>
+    </b-list-group-item>
+    <b-collapse id="collapseScheduling">
+      <b-list-group>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Schedule a Demo - Midwest</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Schedule a Demo - West Coast</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-minus-circle"></i>Past Schedules</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Upcoming Schedules</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Pending Schedules</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>cancel Schedules</span></b-list-group-item>
+      </b-list-group>
+    </b-collapse>
+
+    <b-list-group-item href="#">
+      <span><i class="fa fa-calendar"></i>Calendar</span>
+    </b-list-group-item>
+
+    <b-list-group-item v-b-toggle.collapseReports
+                       class="d-flex justify-content-between align-items-center">
+      <span><i class="fa fa-desktop"></i>Reports</span>
+      <span class="dropdown-icon fa fa-angle-down"></span>
+    </b-list-group-item>
     <b-collapse id="collapseReports">
+      <b-list-group>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Approved Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Submitted Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-minus-circle"></i>Incomplete Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Demos Conflicts</span></b-list-group-item>
+      </b-list-group>
+    </b-collapse>
+
+    <b-list-group-item v-b-toggle.collapseInvoices
+                       class="d-flex justify-content-between align-items-center">
+      <span><i class="fa fa-desktop"></i>Venue Invoices</span>
+      <span class="dropdown-icon fa fa-angle-down"></span>
+    </b-list-group-item>
+    <b-collapse id="collapseInvoices">
+      <b-list-group>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Approved Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Submitted Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-minus-circle"></i>Incomplete Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Demos Conflicts</span></b-list-group-item>
+      </b-list-group>
+    </b-collapse>
+
+    <b-list-group-item v-b-toggle.collapseSettings
+                       class="d-flex justify-content-between align-items-center">
+      <span><i class="fa fa-desktop"></i>Settings</span>
+      <span class="dropdown-icon fa fa-angle-down"></span>
+    </b-list-group-item>
+    <b-collapse id="collapseSettings">
+      <b-list-group>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Approved Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Submitted Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-minus-circle"></i>Incomplete Demos</span></b-list-group-item>
+        <b-list-group-item href="#"><span><i class="fa fa-bolt"></i>Demos Conflicts</span></b-list-group-item>
+      </b-list-group>
+    </b-collapse>
+
+    <b-list-group-item v-b-toggle.collapseUtility
+                       class="d-flex justify-content-between align-items-center">
+      <span><i class="fa fa-desktop"></i>Utility</span>
+      <span class="dropdown-icon fa fa-angle-down"></span>
+    </b-list-group-item>
+    <b-collapse id="collapseUtility">
       <b-list-group>
         <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Approved Demos</span></b-list-group-item>
         <b-list-group-item href="#"><span><i class="fa fa-check-circle-o"></i>Submitted Demos</span></b-list-group-item>
@@ -73,9 +149,13 @@
 
 <style scoped>
   .side-navigation {
+    -webkit-box-shadow: 0px 0px 30px 5px #dadada;
+    -moz-box-shadow: 0px 0px 30px 5px #dadada;
+    box-shadow: 0px 0px 30px 5px #dadada;
     font-size: 13px;
     font-weight: 300;
     text-align: left;
+    width: 225px;
   }
   .side-navigation .list-group {
     -webkit-box-shadow: 0px 1px 2px 0px #ccc;

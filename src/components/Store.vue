@@ -3,12 +3,12 @@
     <navbar></navbar>
     <div class="container-fluid">
       <b-row>
-        <b-col md="3">
+        <b-col class="col-auto pr-0">
           <side-nav></side-nav>
         </b-col>
 
-        <b-col md="9">
-          <b-card class="parent-card dashboard-card">
+        <b-col>
+          <div class="content-wrapper">
             <b-row>
               <b-col class="align-self-start">
                 <h3>Store Details</h3>
@@ -311,7 +311,7 @@
               </div>
 
             </b-card>
-          </b-card>
+          </div>
         </b-col>
       </b-row>
     </div> <!-- /.container-fluid -->
@@ -329,17 +329,25 @@
 </script>
 
 <style scoped>
-  .parent-card {
+  .content-wrapper {
     padding-bottom: 75px;
     margin-bottom: 60px;
+  }
+  .dashboard-card {
+    -webkit-box-shadow: 0px 2px 10px 1px #dadada;
+    -moz-box-shadow: 0px 2px 10px 1px #dadada;
+    box-shadow: 0px 2px 10px 1px #dadada;
   }
   .table-row {
     border-bottom: 1px solid #d9d9d9;
   }
-.table-row:last-child {
-  border-bottom: none;
-}
+  .table-row:last-child {
+    border-bottom: none;
+  }
   .info-card {
     margin-bottom: 30px;
+  }
+  .info-card .card-body {
+    padding-bottom: 15px;
   }
 </style>

@@ -121,6 +121,9 @@
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
 	}
+	.login-card {
+		text-align: center;
+	}
 	.form-group {
 		margin-bottom: 2rem;
 		position: relative;

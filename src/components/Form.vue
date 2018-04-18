@@ -4,11 +4,11 @@
 
     <div class="container-fluid">
       <b-row>
-        <b-col md="3">
+        <b-col class="col-auto pr-0">
           <side-nav></side-nav>
         </b-col>
 
-        <b-col md="9">
+        <b-col>
           <div class="content-wrapper">
             <b-form @submit="onSubmit" @reset="onReset">
               <b-row>
@@ -200,5 +200,36 @@
   padding: 10px 40px;
   float: right;
   margin-top: 20px;
+}
+
+.content-wrapper {
+  padding: 10px 150px 100px 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #213e7a;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 0px;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
 }
 </style>

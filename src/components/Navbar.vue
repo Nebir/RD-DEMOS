@@ -26,5 +26,17 @@
 </script>
 
 <style scoped>
+  .navbar {
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 20px 0px #dadada;
+    -moz-box-shadow: 0px 5px 20px 0px #dadada;
+    -ms-box-shadow: 0px 5px 20px 0px #dadada;
+    -o-box-shadow: 0px 5px 20px 0px #dadada;
+    box-shadow: 0px 5px 20px 0px #dadada;
+    margin-bottom: 15px;
+  }
 
+  .navbar-brand img {
+    width: 120px;
+  }
 </style>

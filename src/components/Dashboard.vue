@@ -3,632 +3,637 @@
     <navbar></navbar>
     <div class="container-fluid">
       <b-row>
-        <b-col md="3">
+        <b-col class="col-auto pr-0">
           <side-nav></side-nav>
         </b-col>
 
-        <b-col md="9">
+        <b-col>
           <!--<b-card class="info-card" v-for="title in ['Serial','Location','Venue','Phone Number','Email Branch Manager','Note']">
             <div v-for="info in ['01','142 Goose Island','Restaurant Depot - Midwest','312-255-9800','manager.042@jetrord.com','']" :key="`${title}_${info}`">-->
-          <b-card class="info-card dashboard-card">
+          <div class="content-wrapper">
             <b-row>
 
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
             </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
-
-          <b-card class="info-card dashboard-card">
-            <b-row>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Serial
-                  </small>
-                  <p class="info">01</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Location
-                  </small>
-                  <p class="info">142 Goose Island</p>
-                </div>
-              </b-col>
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Venue
-                  </small>
-                  <p class="info">Restaurant Depot - Midwest</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Phone Number
-                  </small>
-                  <p class="info">312-255-9800</p>
-                </div>
-              </b-col>
-
-
-              <b-col>
-                <div class="information-unit">
-                  <small class="information-title">
-                    Email Branch Manager
-                  </small>
-                  <p class="info">manager.042@jetrord.com</p>
-                </div>
-
-                <div class="information-unit">
-                  <small class="information-title">
-                    Note
-                  </small>
-                  <p class="info"></p>
-                </div>
-              </b-col>
-
-              <b-col class="col-auto align-self-end">
-                <b-button-group>
-                  <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
-                  <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
-                </b-button-group>
-              </b-col>
-
-            </b-row>
-          </b-card>
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+
+            <b-card class="info-card dashboard-card">
+              <b-row>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Serial
+                    </small>
+                    <p class="info">01</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Location
+                    </small>
+                    <p class="info">142 Goose Island</p>
+                  </div>
+                </b-col>
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Venue
+                    </small>
+                    <p class="info">Restaurant Depot - Midwest</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Phone Number
+                    </small>
+                    <p class="info">312-255-9800</p>
+                  </div>
+                </b-col>
+
+
+                <b-col>
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Email Branch Manager
+                    </small>
+                    <p class="info">manager.042@jetrord.com</p>
+                  </div>
+
+                  <div class="information-unit">
+                    <small class="information-title">
+                      Note
+                    </small>
+                    <p class="info"></p>
+                  </div>
+                </b-col>
+
+                <b-col class="col-auto align-self-end">
+                  <b-button-group>
+                    <b-button to="/form" class="btn-rd btn-teal-light">{{ editBtn }}</b-button>
+                    <b-button class="btn-rd btn-skyblue-light">{{ detailsBtn }}</b-button>
+                  </b-button-group>
+                </b-col>
+
+              </b-row>
+            </b-card>
+          </div>
         </b-col>
       </b-row>
     </div> <!-- /.container-fluid -->
@@ -651,8 +656,14 @@
 </script>
 
 <style scoped>
+  .dashboard-card  {
+    -webkit-box-shadow: 0px 5px 2px 0px #ebebeb;
+    -moz-box-shadow: 0px 5px 2px 0px #ebebeb;
+    box-shadow: 0px 5px 2px 0px #ebebeb;
+    padding-top: 2px;
+  }
   .info-card .card-body {
-    padding: 0 0 0 45px;
+    padding: 0 0 0 50px;
   }
   .btn-rd {
     margin-bottom: 0px;

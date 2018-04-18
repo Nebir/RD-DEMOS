@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="home-page">
     <nav class="navbar navbar-expand-lg justify-content-between navbar-fixed-top">
       <div class="container">
         <a class="navbar-brand">
@@ -18,8 +18,10 @@
         </div>
       </div>
     </nav>
-    <h1>{{ msg }}</h1>
-    <h2>This is the home page</h2>
+    <div class="content">
+      <h1>{{ msg }}</h1>
+      <h2>This is the home page</h2>
+    </div>
   </div>
 </template>
 
@@ -38,5 +40,9 @@
 <style scoped>
   h1, h2 {
     font-weight: normal;
+  }
+  .home-page .content {
+    margin-top: 60px;
+    text-align: center;
   }
 </style>
